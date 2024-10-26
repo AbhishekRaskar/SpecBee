@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Metropolis", sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.speakers-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Metropolis", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #000;
+}
+
+
+
+.subtitle {
+    font-family: "Metropolis", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    color: #000;
+}
+
+
+.companies-link {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+/* Featured Speaker Box */
+.featured-speaker {
+    display: none;
+    /* max-width: 95%; */
+    margin: 0 auto 2rem;
+    padding: 2rem;
+    border: 1px solid #FFD700;
+    border-radius: 8px;
+    position: relative;
+}
+
+.featured-speaker.active {
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #000;
+}
+
+.featured-speaker-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.featured-speaker-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.featured-speaker-details {
+    flex: 1;
+}
+
+.featured-speaker-name {
+    font-family: "Metropolis", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.featured-speaker-title {
+    font-family: "Metropolis", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.featured-speaker-company {
+    font-family: "Metropolis", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link img {
+    width: 24px;
+    height: 24px;
+}
+
+.featured-speaker-bio {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 20px;
+    color: #444;
+    text-align: left;
+}
+
+
+
+/* Speakers Slider */
+.speakers-slider-container {
+    position: relative;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+.speakers-slider {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem;
+    margin: 0 2rem;
+}
+
+
+.speaker-card {
+    flex: 0 0 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.speaker-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    object-fit: cover;
+}
+
+
+.speaker-name {
+    font-family: "Metropolis", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.speaker-title {
+    font-family: "Metropolis", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.speaker-company {
+    font-family: "Metropolis", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.program-btn {
+    display: inline-block;
+    background: #0052CC;
+    color: white;
+    width: 30%;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+
+.program-info {
+    margin-top: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.program-arrow {
+    display: block;
+    margin: 0.5rem auto;
+    width: 40px;
+}
+
+@media (max-width: 768px) {
+    .featured-speaker-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .speakers-slider {
+        gap: 1rem;
+    }
+
+    .speaker-card {
+        flex: 0 0 160px;
+    }
+}

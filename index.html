@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speakers</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="speakers-section">
+        <h1>View our Featured Speakers for the Event</h1>
+        <p class="subtitle">
+          Speakers are core contributors and industry thought leaders working at
+          <a href="#" class="companies-link">companies</a> that push for
+          innovation.
+        </p>
+
+        <!-- Opened Speaker Box -->
+        <div class="featured-speaker" id="featuredSpeaker">
+          <button class="close-btn" aria-label="Close speaker details">
+            &times;
+          </button>
+          <div class="featured-speaker-info">
+            <img src="" alt="" class="featured-speaker-img" />
+            <div class="featured-speaker-details">
+              <h2 class="featured-speaker-name"></h2>
+              <p class="featured-speaker-title"></p>
+              <p class="featured-speaker-company"></p>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="Speaker's Discord">
+                  <img src="Images/Icon1.png" alt="Discord" />
+                </a>
+                <a href="#" class="social-link" aria-label="Speaker's Twitter">
+                  <img src="Images/Icon2.png" alt="Twitter" />
+                </a>
+                <a href="#" class="social-link" aria-label="Speaker's LinkedIn">
+                  <img src="Images/Icon3.png" alt="LinkedIn" />
+                </a>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <img src="Images/Line 1.png" alt="Line" />
+            <div>
+              <p class="featured-speaker-bio"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="speakers-slider-container">
+          <button class="slider-btn prev-btn" aria-label="Previous speakers">
+            <img src="Images/Greater.png" alt="Previous" />
+          </button>
+          <div class="speakers-slider" id="speakersSlider">
+            <!-- Speakers -->
+          </div>
+          <button class="slider-btn next-btn" aria-label="Next speakers">
+            <img src="Images/Smalller.png" alt="Next" />
+          </button>
+        </div>
+
+        <div class="program-link">
+          <a href="#" class="program-btn">See the Program</a>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
